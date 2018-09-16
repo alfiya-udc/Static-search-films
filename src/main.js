@@ -1849,7 +1849,7 @@ function createTabs(event) {
         for (let i = 0; i < panels.length; i++) {
             tabIndex === i ? panels[i].style.display = 'block' : panels[i].style.display = 'none';
 		}
-		
+
 		if (event.target.classList.contains('js-bookmarks-header')) {
 			updateFilmsForSelect();
 			containerOfTags.style.display = 'none';
@@ -2023,7 +2023,7 @@ function searchForName() {
     let str = document.querySelector('.js-search-field').value;
 	let title;
 
-	if (str === '') return foundFilms; //чтобы лишний раз не ходить по циклу, если строка пустая
+	if (str === '') return films; //чтобы лишний раз не ходить по циклу, если строка пустая
 
 	foundFilms = [];
 
